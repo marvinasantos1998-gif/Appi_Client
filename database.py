@@ -31,11 +31,11 @@ def guardar_usuarios(usuarios):
     
     for usuario in usuarios:
         cursor.execute("""
-            INSERT OR REPLACE INTO usuarios (id, name, usuario, email, telefono, sitio_web)
+            INSERT OR REPLACE INTO usuarios (id, nombre, usuario, email, telefono, sitio_web)
             VALUES (?, ?, ?, ?, ?, ?) 
         """, (
             usuario["id"],
-            usuario["name"],
+            usuario["nombre"],
             usuario["username"],
             usuario["email"],
             usuario["phone"],
