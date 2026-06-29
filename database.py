@@ -35,7 +35,7 @@ def guardar_usuarios(usuarios):
             VALUES (?, ?, ?, ?, ?, ?) 
         """, (
             usuario["id"],
-            usuario["nombre"],
+            usuario["name"],
             usuario["username"],
             usuario["email"],
             usuario["phone"],
