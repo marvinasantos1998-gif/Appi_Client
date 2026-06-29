@@ -56,7 +56,7 @@ elif menu == "Ver la base de datos":
 
         col1, col2, col3 = st.columns(3)
         col1.metric("Total usuarios", len(df))
-        col2.metric("Total ciudades", df["ciudad"].nunique())
+        # col2.metric("Total ciudades", df["ciudad"].nunique())
         col3.metric("Total correos", df["email"].nunique())
 
 elif menu == "Buscar los usuarios":
