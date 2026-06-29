@@ -71,7 +71,7 @@ elif menu == "Buscar los usuarios":
 
         if name:
             resultado = df[
-                df["name"].str.contains(name, case=False, na=False) |
+                df["nombre"].str.contains(name, case=False, na=False) |
                 df["usuario"].str.contains(name, case=False, na=False)
             ]
 
